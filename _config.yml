@@ -20,7 +20,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "posts.html"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Discord, icon: discord, url: "#", click: "mx61tt#1239"}
+  - {title: Discord, icon: discord, click: "mx61tt#1239"}
   - {title: Mail, icon: envelope, url: "mailto:mx61tt@protonmail.com"}
   - {title: Github, icon: github, url: "https://github.com/mx61tt"}
 
