@@ -17,7 +17,7 @@
     {%- assign title = item.title | default: node.title -%}
     {%- assign icon = item.icon | default: item.sidebaricon -%}
     {%- assign click = item.click | default: item.click -%}
-    <a aria-label="{{ title }}" href="{% if url != 'javascript:void(0);' %}{{ url | relative_url }}{% else %}javascript:void(0);{% endif %}" {% if url == page.url %}class="selected"{% endif %} onclick="alert('{{ click }}');">
+    <a aria-label="{{ title }}" href="{{ url | relative_url }}" {% if url == page.url %}class="selected"{% endif %}>
       <svg aria-hidden="true" class="icon"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ icon }}"></use></svg>
       <span aria-hidden="true">{{ title }}</span>
     </a>
